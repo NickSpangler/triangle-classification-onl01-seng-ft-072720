@@ -22,7 +22,6 @@ class Triangle
   end
 
   def invalid?
-    # if (self.side1 <= 0 || self.side2 <= 0 || self.side3 <= 0  ||
     if (self.sides.any?{ |side| side <= 0} ||
       self.side1 + self.side2 <= side3 ||
       self.side2 + self.side3 <= side1 ||
